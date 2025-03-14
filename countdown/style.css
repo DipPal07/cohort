@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(172, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+}
+h3 {
+  margin-bottom: 15px;
+}
+#time,
+button {
+  height: 37px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+}
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transition: all 0.3s;
+}
+.active {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transition: all 0.3s;
+}
+#show-time {
+  background-color: blueviolet;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  font-weight: 700;
+}
