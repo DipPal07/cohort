@@ -19,6 +19,7 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
   border-radius: 10px;
   border: 1px solid #ececec;
+  padding: 5px;
 }
 .todo {
   /* background-color: aqua; */
