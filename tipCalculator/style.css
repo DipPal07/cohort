@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: rgb(30, 255, 0);
+  font-family: "Fira Code", monospace;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.container {
+  background-color: rgb(28, 11, 54);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+}
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #00ff15;
+  color: rgb(46, 46, 46);
+  transition: all 0.3s;
+}
+input {
+  font-size: 20px;
+  height: 50px;
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#error-message {
+  color: red;
+  display: none;
+  font-weight: 500;
+  text-align: center;
+}
