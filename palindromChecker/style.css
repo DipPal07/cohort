@@ -45,6 +45,9 @@ button:hover {
   background-color: rgb(27, 255, 114);
   transition: all 0.3s;
 }
+button:active {
+  background-color: rgb(12, 128, 1);
+}
 
 #output {
   text-align: center;
