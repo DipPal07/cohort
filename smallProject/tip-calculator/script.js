@@ -20,13 +20,15 @@ function calculate() {
     return;
   }
   const totalTip = (billValue * tipValue) / 100;
-  const totalTipPoint = String(totalTip).split(".")[1].padEnd(2, "0");
+
+  const totalTipPoint = String(totalTip).split(".")[1]?.padEnd(2, "0") || "00";
   const totalTipPerPerson = totalTip / peopleValue;
-  const totalTipPerPersonPoint = String(totalTipPerPerson)
-    .split(".")[1]
-    .padEnd(2, "0");
-  tipAmount.innerText = `${Math.floor(totalTip)}.${totalTipPoint}`;
-  tipPerPerson.innerText = `${Math.floor(
-    totalTipPerPerson
-  )}.${totalTipPerPersonPoint}`;
+
+  const totalTipPerPersonPoint =
+    String(totalTipPerPerson).split(".")[1]?.padEnd(2, "0") || "00";
+
+  tipAmount.innerText = `${Math.floor(totalTip) || "00"}.${totalTipPoint}`;
+  tipPerPerson.innerText = `${
+    Math.floor(totalTipPerPerson) || "00"
+  }.${totalTipPerPersonPoint}`;
 }
