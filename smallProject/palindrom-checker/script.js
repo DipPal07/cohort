@@ -8,8 +8,22 @@ function checkPalindrome() {
     output.innerText = "Please enter a value";
     return;
   }
-  let reversValue = inputValue.split("").reverse().join("");
-  if (inputValue === reversValue) {
+  let inputWithoutSpace = inputValue
+    .toLowerCase()
+    .split(" ")
+    .join("")
+    .split("")
+    .join("");
+
+  let reversValue = inputValue
+    .toLowerCase()
+    .split(" ")
+    .join("")
+    .split("")
+    .reverse()
+    .join("");
+
+  if (inputWithoutSpace === reversValue) {
     output.innerText = `${inputValue} is a palindrome`;
     return;
   }
