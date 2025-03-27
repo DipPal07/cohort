@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="demo todo board">
+            <h3>Todo</h3>
+            <div class="task-content" id="new-task">
+                <p class="task" draggable="true">Task 1</p>
+                <p class="task" draggable="true">Task2</p>
+            </div>
+
+
+        </div>
+        <div class="demo panding board" id="pending-task">
+            <h3>Pending</h3>
+            <div class="task-content"></div>
+        </div>
+        <div class="demo done board">
+            <h3>done</h3>
+            <div class="task-content"></div>
+        </div>
+    </div>
+    <button onclick="createTask()">Create new</button>
+    <script src="./script.js"></script>
+</body>
+
+</html>

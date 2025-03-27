@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 70vh;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.demo {
+  width: 200px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  padding: 5px;
+}
+.todo {
+  /* background-color: aqua; */
+}
+.panding {
+  /* background-color: aquamarine; */
+}
+.done {
+  /* background-color: blueviolet; */
+}
+.task {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+.task:hover {
+  background-color: #afffca;
+  transition: all 0.3s;
+}
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  margin: 20px 0 0 20px;
+}
+.task {
+  transition: all 0.3s ease;
+}
